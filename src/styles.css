@@ -90,7 +90,7 @@
   #content {
     grid-area: cont;
     border: 8px solid black;
-    background-image: url("./assets/goldenDragons5.png");
+    background-image: url("./assets/goldenDragons6.png");
     background-size: calc(10.35rem + 4.25vh + 1.75%);
     /* background-size: contain; */
     background-position: center;
@@ -112,13 +112,22 @@
     /* position: relative; */
     /* width: calc(1.75rem + 1.75vw + 75px);
     height: calc(.75rem + .75vh + 25px); */
-    width: calc(4.25rem + 4.25vw);
-    height: calc(2rem + 2vh);
-    /* border-radius: 4px; */
-    /* outline: 5px solid white; */
+    width: calc(4.65rem + 4.65vw);
+    height: calc(2.1rem + 2.1vh);
+    border-radius: 12px;
+    outline: 1px solid white;
     /* border: none; */
-    box-shadow: inset .25px .5px 3px 1.5px rgba(0, 0, 0, 1);
+    /* box-shadow: inset .25px .5px 3px 1.5px rgba(0, 0, 0, 1); */
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); */
+    color: white;
+    background-color: rgb(26, 24, 24, .65);
+    font-size: 22px;
+
+    text-shadow: 
+        1px 1px 0 #000,  
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000; 
 
   }
 
@@ -232,6 +241,24 @@
     letter-spacing: .25rem;
     align-self: start;
     margin-left: 270px;
+  }
+
+  #marquee #address {
+    letter-spacing: .07rem;
+    font-size: small;
+    margin-left: 270px;
+  }
+
+  #marquee #phone {
+    letter-spacing: .07rem;
+    font-size: small;
+    margin-left: 30px;
+  }
+
+  #marquee #contact {
+    letter-spacing: .07rem;
+    font-size: small;
+    margin-left: 30px;
   }
 
   /* #marquee>p {
