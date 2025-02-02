@@ -13,7 +13,7 @@ export const genHomePage = (function(){
     const testimonial = document.createElement('h4');
 
     frontPage.classList.add('main');
-    searchBar.classList.add('search');
+    // searchBar.classList.add('search');
     headline.classList.add('headline');
     testimonial.classList.add('testimonial');
     
@@ -46,7 +46,7 @@ The ambiance is warm and inviting, with a touch of modern elegance that makes th
 
     const buildPage = () => {
 
-        frontPage.append(searchBar, headline, testimonial);
+        frontPage.append(headline, testimonial);
         content.append(frontPage);
 
     }

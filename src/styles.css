@@ -81,6 +81,7 @@
     top: 0;
     position: sticky;
     /* align-self: start; */
+    overflow: visible;
 
   }
 
@@ -110,7 +111,7 @@
     height: calc(.75rem + .75vh + 25px); */
     width: calc(4.25rem + 4.25vw);
     height: calc(2rem + 2vh);
-    /* border-radius: 12px; */
+    /* border-radius: 4px; */
     /* outline: 5px solid white; */
     /* border: none; */
     box-shadow: inset .25px .5px 3px 1.5px rgba(0, 0, 0, 1);
@@ -129,13 +130,45 @@
 
   .testimonial {
     background-color: rgba(255, 255, 255, .8);
-    max-width: 30%;
-    padding: 7.5px;
-    padding-left: 12px;
-    padding-right: 12px;
+    max-width: 45%;
+    padding:  20px;
+    padding-left: 25px;
+    padding-right: 25px;
     /* align-self: center; */
     justify-self: center;
 
     border-radius: 12px;
     white-space: pre-line;
+  }
+
+  .headline {
+    margin-top: 50px;
+  }
+
+  .nav::before {
+    content: '';
+    height: 175px;
+    width: 175px;
+    background-image: url("./assets/new_year_element_207_b\ -\ Copy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    /* top: 60%; */
+    /* left: 28px; */
+    /* transform: translateY(-46%); */
+    margin-right: 8px;
+    display: inline-block;
+    /* z-index: 10; */
+    /* outline: 2px solid red; */
+    align-self: flex-start;
+    /* right: 170px; */
+    margin: 0;
+    padding: 0;
+    /* margin-left: -200px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
   }
