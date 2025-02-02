@@ -12,9 +12,27 @@ const genHomePage = (function(){
     const headline = document.createElement('h2');
     const testamonial = document.createElement('h4');
 
+    frontPage.classList.add('main');
+    searchBar.classList.add('search');
+    headline.classList.add('headline');
+    testamonial.classList.add('testamonial');
+    
+
+
+    const buildPage = () => {
+
+        frontPage.append(searchBar, headline, testamonial);
+        content.append(frontPage);
+
+    }
 
 
 
+    return { buildPage }
 
 })();
+
+
+
+export const page = () => genHomePage.buildPage();
 

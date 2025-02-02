@@ -1,0 +1,102 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr;
+    grid-template-areas: 
+    "header"
+    "cont";
+  }
+
+  .head {
+    grid-area: header;
+    border: 1px solid black;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* overflow: hidden; */
+
+
+
+  }
+
+  .nav { 
+    width: 80%;
+    height: 55%;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  #content {
+    grid-area: cont;
+    border: 5px solid pink;
+    background-image: url("./assets/goldenDragons2.png");
+    background-size: calc(10.35rem + 4.25vh + 1.75%);
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: repeat;
+
+    
+
+  }
+
+  .navBtn {
+    width: calc(1.75rem + 1.75vw + 75px);
+    height: calc(.75rem + .75vh + 25px);
+    border-radius: 12px;
+    outline: none;
+    /* border: none; */
+
+  }
+
+
+  
