@@ -46,7 +46,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .175fr 1fr;
+    grid-template-rows: .125fr 1fr;
     grid-template-areas: 
     "header"
     "cont";
@@ -58,11 +58,13 @@
     height: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
     overflow: visible;
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 0, 1);
 
 
 
@@ -72,7 +74,7 @@
     width: 100%;
     height: 55%;
     background-color: rgb(92, 0, 0);
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,6 +101,7 @@
     /* justify-content: center; */
     text-align: center;
     align-items: center;
+    border-top: 4px solid black;
 
     
 
@@ -129,7 +132,8 @@
 
 
   .testimonial {
-    background-color: rgba(255, 255, 255, .8);
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: rgba(245, 245, 245, .8);
     max-width: 45%;
     padding:  20px;
     padding-left: 25px;
@@ -143,12 +147,25 @@
 
   .headline {
     margin-top: 50px;
+    margin-bottom: 35px;
+    color: white;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .065rem;
+      font-size: 45px;
+      font-weight: bold;
+      text-shadow: 
+        1px 1px 0 #000,  
+        -1px -1px 0 #000,  
+        1.5px -1px 0 #000,  
+        -1.5px 2px 0 #000; 
+    
   }
 
   .nav::before {
     content: '';
-    height: 175px;
-    width: 175px;
+    height: 124px;
+    width: 124px;
     background-image: url("./assets/new_year_element_207_b\ -\ Copy.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -168,7 +185,60 @@
     /* margin-left: -200px; */
     position: fixed;
     top: 0;
+    /* left: 105px; */
     left: 0;
     
 
   }
+
+  
+  .nav::after {
+    content: '';
+    height: 76px;
+    width: 76px;
+    background-image: url("./assets/noodleBowl2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    /* top: 60%; */
+    /* left: 28px; */
+    /* transform: translateY(-58%); */
+    margin-right: 8px;
+    display: inline-block;
+    /* z-index: 10; */
+    /* outline: 2px solid red; */
+    align-self: flex-start;
+    /* right: 170px; */
+    margin: 0;
+    padding: 0;
+    /* margin-left: -200px; */
+    position: fixed;
+    top: -10px;
+    right: 1170px;
+    /* transform: rotate(-25deg); */
+    /* position: fixed; */
+    
+
+  }
+
+  #marquee {
+    display: flex;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .25rem;
+    align-self: start;
+    margin-left: 270px;
+  }
+
+  /* #marquee>p {
+    display: flex;
+    color: white;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  } */
