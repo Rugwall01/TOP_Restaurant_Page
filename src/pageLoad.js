@@ -1,5 +1,5 @@
 
-const genHomePage = (function(){
+export const genHomePage = (function(){
 
     const header = document.querySelector('.head');
     const navBar = document.querySelector('.nav');
@@ -34,5 +34,5 @@ const genHomePage = (function(){
 
 
 
-export const page = () => genHomePage.buildPage();
+// export const page = () => genHomePage.buildPage();
 
