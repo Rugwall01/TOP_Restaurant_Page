@@ -1,3 +1,18 @@
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -43,13 +58,16 @@
 
   body {
     min-height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .125fr 1fr;
+    grid-template-rows: 142px 1fr;
     grid-template-areas: 
     "header"
     "cont";
+    gap: 0;
+    overflow: auto;
+
   }
 
   .head {
@@ -66,6 +84,9 @@
     top: 0;
     background-color: rgba(0, 0, 0, 1);
 
+    min-width: 1450px;
+    max-width: 150vw;
+    /* max-height: 142px; */
 
 
   }
@@ -102,6 +123,9 @@
     text-align: center;
     align-items: center;
     border-top: 4px solid black;
+    margin: 0;
+    top: 0;
+    
 
     
 
@@ -112,8 +136,8 @@
     /* position: relative; */
     /* width: calc(1.75rem + 1.75vw + 75px);
     height: calc(.75rem + .75vh + 25px); */
-    width: calc(4.65rem + 4.65vw);
-    height: calc(2.1rem + 2.1vh);
+    width: calc(5.65rem + 5.65vw);
+    height: calc(2.3rem + 2.3vh);
     border-radius: 12px;
     outline: 1px solid white;
     /* border: none; */
@@ -121,13 +145,16 @@
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); */
     color: white;
     background-color: rgb(26, 24, 24, .65);
-    font-size: 22px;
+    font-size: 1vw;
 
     text-shadow: 
         1px 1px 0 #000,  
         -1px -1px 0 #000,  
         1px -1px 0 #000,  
         -1px 1px 0 #000; 
+
+    overflow: visible;
+    margin-left: -56px;
 
   }
 
@@ -142,7 +169,7 @@
 
   .testimonial {
     /* background-color: rgba(255, 255, 255, .8); */
-    background-color: rgba(245, 245, 245, .8);
+    background-color: rgba(245, 245, 245, .85);
     max-width: 45%;
     padding:  20px;
     padding-left: 25px;
@@ -152,6 +179,9 @@
 
     border-radius: 12px;
     white-space: pre-line;
+    color: rgba(0, 0, 0, .6);
+    font-family: 'Lora';
+    font-style: italic;
   }
 
   .headline {
@@ -168,18 +198,27 @@
         -1px -1px 0 #000,  
         1.5px -1px 0 #000,  
         -1.5px 2px 0 #000; 
+
+    font-family: 'Cinzel';
+    font-weight: lighter;
+    white-space: pre-line;
     
   }
 
   .nav::before {
     content: '';
-    height: 124px;
-    width: 124px;
+    /* height: 124px; */
+    /* width: 124px; */
+    min-height: 140px;
+    min-width: 140px;
+    /* height: calc(10vh  + 2vw);
+    width: calc(12vh + 2vw); */
+    width: auto;
     background-image: url("./assets/new_year_element_207_b\ -\ Copy.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: inherit;
+    /* position: inherit; */
     /* top: 60%; */
     /* left: 28px; */
     /* transform: translateY(-46%); */
@@ -196,12 +235,54 @@
     top: 0;
     /* left: 105px; */
     left: 0;
-    
+    /* position: absolute;
+    top: -60px;
+    --height: 182%;
+    height: var(--height);
+    width: calc(var(--height) / 25);
+    max-width: 100%; */
+
+
 
   }
 
   
-  .nav::after {
+  /* .nav::after {
+    content: '';
+    height: 76px;
+    width: 76px;
+    background-image: url("./assets/noodleBowl2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+    /* top: 60%; */
+    /* left: 28px; */
+    /* transform: translateY(-58%); */
+    /* margin-right: 8px;
+    display: inline-block; */
+    /* z-index: 10; */
+    /* outline: 2px solid red; */
+    /* align-self: flex-start; */
+    /* right: 170px; */
+    /* margin: 1px;
+    padding: 0; */
+    /* margin-left: -200px; */
+    /* position: absolute;
+    top: -67px; */
+    /* right: 1170px; */
+    /* right: 61vw; */
+    /* transform: rotate(-25deg); */
+    /* position: fixed; */
+    /* justify-self: center;
+    margin-right: 27%;
+    z-index: 1; */
+
+  /* } */ 
+
+
+
+  #marquee::after {
     content: '';
     height: 76px;
     width: 76px;
@@ -219,17 +300,22 @@
     /* outline: 2px solid red; */
     align-self: flex-start;
     /* right: 170px; */
-    margin: 0;
+    margin: 1px;
     padding: 0;
     /* margin-left: -200px; */
-    position: fixed;
-    top: -10px;
-    right: 1170px;
+    position: absolute;
+    top: -20px;
+    /* right: 1170px; */
+    /* right: 61vw; */
     /* transform: rotate(-25deg); */
     /* position: fixed; */
-    
+    justify-self: start;
+    margin-right: calc(1rem + 9vw + 110px);
+    z-index: -1;
+    overflow: visible;
 
   }
+
 
   #marquee {
     display: flex;
@@ -240,25 +326,35 @@
     align-items: center;
     letter-spacing: .25rem;
     align-self: start;
-    margin-left: 270px;
+    margin-left: 220px;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+    font-family: 'Cinzel';
+    font-weight: bolder;
+
   }
+  
 
   #marquee #address {
     letter-spacing: .07rem;
     font-size: small;
     margin-left: 270px;
+    overflow: visible;
   }
 
   #marquee #phone {
     letter-spacing: .07rem;
     font-size: small;
     margin-left: 30px;
+    overflow: visible;
   }
 
   #marquee #contact {
     letter-spacing: .07rem;
     font-size: small;
-    margin-left: 30px;
+    margin-left: 20px;
+    /* overflow: visible; */
   }
 
   /* #marquee>p {
@@ -269,3 +365,75 @@
     justify-content: center;
     align-items: center;
   } */
+
+
+  #marquee svg {
+    /* content: ''; */
+    height: 16px;
+    width: 16px;
+    /* background-image: url("./assets/map-pin.svg"); */
+    color: white;
+    fill: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+  }
+
+  #marquee #address svg {
+    top: 20px;
+    left: 645px;
+    overflow: visible;
+    color: black;
+    fill: white;
+  }
+
+  #marquee #phone svg {
+    top: 21px;
+    left: 990px;
+    overflow: visible;
+    fill: white;
+    color: black;
+  }
+
+  #marquee #contact>svg:nth-child(1) {
+    height: 12px;
+    width: 12px;
+    top: 23px;
+    left: 1234px;
+    overflow: none;
+    fill: white;
+    color: white;
+  }
+
+  #marquee #contact>svg:nth-child(2) {
+    height: 12px;
+    width: 12px;
+    top: 23px;
+    left: 1254px;
+    overflow: none;
+    fill: white;
+    color: white;
+  }
+
+  #marquee #contact>svg:nth-child(3) {
+    height: 12px;
+    width: 12px;
+    top: 23px;
+    left: 1274px;
+    overflow: none;
+    fill: white;
+    color: white;
+  }
+
+  #marquee #contact>svg:nth-child(4) {
+    height: 12px;
+    width: 12px;
+    top: 23px;
+    left: 1294px;
+    overflow: none;
+    fill: white;
+    color: white;
+  }
+
+
