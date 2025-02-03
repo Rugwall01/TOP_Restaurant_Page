@@ -88,7 +88,6 @@
     max-width: 150vw;
     /* max-height: 142px; */
 
-
   }
 
   .nav { 
@@ -155,6 +154,7 @@
 
     overflow: visible;
     margin-left: -56px;
+    cursor: pointer;
 
   }
 
