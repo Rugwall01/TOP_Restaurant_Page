@@ -8,7 +8,20 @@ export const home = (function() {
     headline.classList.add('headline');
     testimonial.classList.add('testimonial');
 
-    headline.textContent = `A Symphony of Spice & Flavor –\n Szechuan Garden Delivers Perfection`;
+    const bold1 = document.createElement('div');
+    const person1 = "— Elliot Ramsey, Food critic & culinary enthusiast";
+    bold1.innerHTML = person1;
+    bold1.classList.add('bold1');
+
+    
+
+    const bold2 = document.createElement('div');
+    const person2 = "— Lena Whitmore, Food Enthusiast & World Traveler";
+    bold2.innerHTML = person2;
+    bold2.classList.add('bold2');
+
+
+    headline.textContent = `"a symphony of spice & flavor!"\n "szechuan garden delivers perfection."`;
 
     testimonial.textContent = ` "A Culinary Gem – Szechuan Garden is Pure Magic! 
 
@@ -20,7 +33,7 @@ Beyond the food, the atmosphere is charming and inviting, blending modern elegan
 
  10/10 – A must-visit for spice lovers and foodies alike!"  
 
- \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 — Elliot Ramsey (Food critic & culinary enthusiast) 
+ \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  
 
 \n
 
@@ -32,9 +45,10 @@ The ambiance is warm and inviting, with a touch of modern elegance that makes th
 
  Szechuan Garden has officially set the standard for Chinese cuisine!" 
 
- \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 — Lena Whitmore, Food Enthusiast & World Traveler`;
+ \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 `;
 
 
+ testimonial.append(bold1, bold2);
 
  const getHeadline = () => headline;
  const getTestimonial = () => testimonial;

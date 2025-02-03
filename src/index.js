@@ -16,7 +16,7 @@ window.onload = (e) => {
     
     const page = () => genHomePage.buildPage();
     page();
-}
+};
 
 homeBtn.addEventListener('click', () => {
     genHomePage.frontPage.innerHTML = '';
@@ -24,7 +24,7 @@ homeBtn.addEventListener('click', () => {
     
     const page = () => genHomePage.buildPage();
     page();
-})
+});
 
 menuBtn.addEventListener('click', () => {
     genHomePage.frontPage.innerHTML = '';
@@ -32,7 +32,32 @@ menuBtn.addEventListener('click', () => {
     
     const page = () => genHomePage.buildPage();
     page();
-})
+});
+
+orderBtn.addEventListener('click', () => {
+    genHomePage.frontPage.innerHTML = '';
+    // genHomePage.frontPage.append(home.getHeadline(), home.getTestimonial());
+    
+    const page = () => genHomePage.buildPage();
+    page();
+});
+
+locationBtn.addEventListener('click', () => {
+    genHomePage.frontPage.innerHTML = '';
+    // genHomePage.frontPage.append(home.getHeadline(), home.getTestimonial());
+    
+    const page = () => genHomePage.buildPage();
+    page();
+});
+
+aboutBtn.addEventListener('click', () => {
+    genHomePage.frontPage.innerHTML = '';
+    // genHomePage.frontPage.append(home.getHeadline(), home.getTestimonial());
+    
+    const page = () => genHomePage.buildPage();
+    page();
+});
 
 
-// console.log("Test");
+
+
