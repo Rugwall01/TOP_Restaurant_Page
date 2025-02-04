@@ -23,7 +23,7 @@ export const home = (function() {
 
     headline.textContent = `"a symphony of spice & flavor!"\n "szechuan garden delivers perfection."`;
 
-    testimonial.textContent = ` "A Culinary Gem – Szechuan Garden is Pure Magic! 
+    testimonial.textContent = `\n "A Culinary Gem – Szechuan Garden is Pure Magic! 
 
 If you’re looking for an unforgettable dining experience, look no further than Szechuan Garden! From the moment you step inside, you’re welcomed by the tantalizing aroma of sizzling spices and the warm hospitality of the staff.
 

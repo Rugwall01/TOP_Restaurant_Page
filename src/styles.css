@@ -281,41 +281,6 @@
 
   }
 
-  
-  /* .nav::after {
-    content: '';
-    height: 76px;
-    width: 76px;
-    background-image: url("./assets/noodleBowl2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: inherit;
-    /* top: 60%; */
-    /* left: 28px; */
-    /* transform: translateY(-58%); */
-    /* margin-right: 8px;
-    display: inline-block; */
-    /* z-index: 10; */
-    /* outline: 2px solid red; */
-    /* align-self: flex-start; */
-    /* right: 170px; */
-    /* margin: 1px;
-    padding: 0; */
-    /* margin-left: -200px; */
-    /* position: absolute;
-    top: -67px; */
-    /* right: 1170px; */
-    /* right: 61vw; */
-    /* transform: rotate(-25deg); */
-    /* position: fixed; */
-    /* justify-self: center;
-    margin-right: 27%;
-    z-index: 1; */
-
-  /* } */ 
-
-
 
   #marquee::after {
     content: '';
@@ -498,6 +463,91 @@
     font-weight: bold;
     color: rgba(0, 0, 0, .9);
     margin-left: calc(30vw - 550px);
+  }
+
+  .menuCard1 {
+    margin-top: 3%;
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: rgba(245, 245, 245, .85);
+    max-width: 52%;
+    padding:  20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* align-self: center; */
+    justify-self: center;
+
+    border-radius: 12px;
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  .menuCard2 {
+    margin-top: 3%;
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: rgba(245, 245, 245, .85);
+    max-width: 52%;
+    padding:  20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* align-self: center; */
+    justify-self: center;
+
+    border-radius: 12px;
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: lighter;
+  }
+  
+  .menuCard3 {
+    margin-top: 3%;
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: rgba(245, 245, 245, .85);
+    max-width: 52%;
+    padding:  20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* align-self: center; */
+    justify-self: center;
+
+    border-radius: 12px;
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: lighter;
+  }
+  
+  .menuCard4 {
+    margin-top: 3%;
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: rgba(245, 245, 245, .85);
+    max-width: 52%;
+    padding:  20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* align-self: center; */
+    justify-self: center;
+
+    border-radius: 12px;
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  img {
+    height: 350px;
+    width: 450px;
+    justify-self: center;
+    border: 2px solid maroon;
+    padding: 15px;
+    margin-top: 5px;
   }
 
   @-moz-document url-prefix() {
