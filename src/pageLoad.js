@@ -8,9 +8,9 @@ export const genHomePage = (function(){
     const content = document.querySelector('#content');
 
     const frontPage = document.createElement('div');
-    const searchBar = document.createElement('input');
-    const headline = document.createElement('h2');
-    const testimonial = document.createElement('h4');
+    // const searchBar = document.createElement('input');
+    // const headline = document.createElement('h2');
+    // const testimonial = document.createElement('h4');
 
     frontPage.classList.add('main');
     // searchBar.classList.add('search');

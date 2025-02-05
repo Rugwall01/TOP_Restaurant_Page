@@ -4,6 +4,7 @@ import "./styles.css";
 import { genHomePage } from "./pageLoad.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
+import { about } from "./about.js";
 
 const homeBtn = document.querySelector('.home');
 const menuBtn = document.querySelector('.menu');
@@ -53,7 +54,7 @@ locationBtn.addEventListener('click', () => {
 
 aboutBtn.addEventListener('click', () => {
     genHomePage.frontPage.innerHTML = '';
-    // genHomePage.frontPage.append(home.getHeadline(), home.getTestimonial());
+    genHomePage.frontPage.append(about.getHours(), about.getAboutSect());
     
     const page = () => genHomePage.buildPage();
     page();
