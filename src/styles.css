@@ -965,4 +965,48 @@
     .navBtn {
       z-index: 15;
     }
+
+    .menuCard1, .menuCard2,
+    .menuCard3, .menuCard4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding:  20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-self: center;
+      transform: translateX(252px);
+    }
+
+    .locationsPH {
+      transform: translateY(-45px);
+    }
+
+    /* #content {
+      overflow: visible;
+    }
+
+    .aboutSect {
+      overflow: visible;
+    } */
+    
+    .head {
+      z-index: 11;
+    }
+    
+    .aboutCard5 {
+      position: absolute;
+      transform: translate(605px, -890px);
+      z-index: 10;
+    }
+
+    #dragImg1 {
+      transform: translate(-66px, -100px);
+    }
+  
+    #dragImg2 {
+      transform: translate(175px, -355px) scaleX(-1);
+      
+    }
   }
